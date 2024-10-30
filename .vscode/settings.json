@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.automationProfile.windows": {
+        "path": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+        "args": []
+    },
+    "terminal.integrated.shellIntegration.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
