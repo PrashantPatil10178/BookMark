@@ -50,8 +50,9 @@ export class AuthService {
             throw new ForbiddenException('Incorrect Credentials');
         }
         const pass = await argon.verify(user.password, password);
+        delete user.password;
         if (pass) {
-            return { message: 'You have been SignIn Sucessfully' };
+            return { user, message: 'You have been SignIn Sucessfully' };
         } else {
             return { message: 'Wrong Credentials' };
         }
